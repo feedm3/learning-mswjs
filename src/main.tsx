@@ -4,10 +4,8 @@ import App from './App'
 import './index.css'
 
 if (import.meta.env.MODE === 'development') {
-  const { worker } = await import('./mocks/browser');
-  worker.start({
-    onUnhandledRequest: 'bypass',
-  });
+  const { start } = await import('./mocks/browser');
+  start();
 }
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

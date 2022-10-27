@@ -20,7 +20,7 @@ pnpm preview
 
 ## Setup
 
-- use `graphql-request` to do 2 different GraphQL request
+- use [`graphql-request`](https://github.com/prisma-labs/graphql-request) to do 2 different GraphQL request
     - one should be ignored by msw and executed regularly
     - the other also gets executed regularly, but gets patched in order to overwrite a specific variable
 - only include msw in `development`
